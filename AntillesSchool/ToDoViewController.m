@@ -16,8 +16,11 @@
 #import "categoriesViewController.h"
 
 @interface ToDoViewController ()
-
-
+{
+    MCPagerView *pagerView;
+    UIScrollView *haderScroll;
+    UIImageView *haderImgView;
+}
 @end
 
 
@@ -198,25 +201,35 @@
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionReusableView *reusableview = nil;
+    UICollectionReusableView *reusableView = nil;
+    
     
     if (kind == UICollectionElementKindSectionHeader) {
-        customReusableview *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
+        customReusableview *collectionHeader = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
+        haderScroll=(UIScrollView *)[collectionHeader viewWithTag:1012];
+        for (int i=0; i<6; i++) {
+            CGRect frame = CGRectMake(haderScroll.frame.size.width * i,
+                                      0,
+                                      haderScroll.frame.size.width,
+                                      haderScroll.frame.size.height);
+            haderImgView=[[UIImageView alloc] initWithFrame:frame];
+            [haderImgView setImage:[UIImage imageNamed:@"banner-1.png"]];
+            
+            [haderScroll addSubview:haderImgView];
+        }
         
-        // NSString *title = [[NSString alloc]initWithFormat:@"Recipe Group #%i", indexPath.section + 1];
-        // headerView.title.text = title;
-        //UIImage *headerImage = [UIImage imageNamed:@"cell_bg.png"];
-        [headerView.reuseImageView setBackgroundColor:[UIColor purpleColor]];
+        haderScroll.contentSize = CGSizeMake(haderScroll.frame.size.width * 6, haderScroll.frame.size.height);
+        haderScroll.delegate = self;
+        haderScroll.scrollEnabled=YES;
+        haderScroll.pagingEnabled=YES;
+        haderScroll.indicatorStyle=UIScrollViewIndicatorStyleBlack;
+        haderScroll.showsHorizontalScrollIndicator=YES;
+         [collectionHeader addSubview:haderScroll];
         
-        reusableview = headerView;
-    }
-    if (kind == UICollectionElementKindSectionFooter) {
-        UICollectionReusableView *footerview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FooterView" forIndexPath:indexPath];
-        
-        reusableview = footerview;
+        reusableView = collectionHeader;
     }
     
-    return reusableview;
+    return reusableView;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -254,11 +267,6 @@
     [self.navigationController pushViewController:categories animated:YES];
 
 }
-
-
- 
-
-
 
 #pragma mark- Textfield Delegates
 -(BOOL)textFieldShouldReturn:(UITextField *)textField

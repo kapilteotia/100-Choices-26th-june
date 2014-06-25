@@ -201,13 +201,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="580"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="17" minimumInteritemSpacing="6" id="g64-bj-Lk3">
                                             <size key="itemSize" width="90" height="110"/>
-                                            <size key="headerReferenceSize" width="50" height="133"/>
+                                            <size key="headerReferenceSize" width="50" height="164"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="8" minY="10" maxX="8" maxY="20"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="101" contentMode="center" reuseIdentifier="Cell" id="0Zg-d9-lVw">
-                                                <rect key="frame" x="8" y="143" width="90" height="110"/>
+                                                <rect key="frame" x="8" y="174" width="90" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="110"/>
@@ -217,15 +217,21 @@
                                             </collectionViewCell>
                                         </cells>
                                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="StI-iy-faP" customClass="customReusableview">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="apW-g7-vCT">
-                                                    <rect key="frame" x="0.0" y="-6" width="320" height="139"/>
+                                                    <rect key="frame" x="0.0" y="-6" width="320" height="170"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner-1.png" id="jHB-Qg-I33">
-                                                            <rect key="frame" x="0.0" y="6" width="320" height="133"/>
-                                                        </imageView>
+                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1012" contentMode="scaleToFill" id="y3H-fB-6Pi">
+                                                            <rect key="frame" x="0.0" y="4" width="320" height="166"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" tag="1013" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner-1.png" id="jHB-Qg-I33">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </scrollView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>

@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "MenuViewController.h"
+#import "MCPagerView.h"
 
 @class TPKeyboardAvoidingScrollView;
-@interface ToDoViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,MenuViewControllerDelegate,UITextFieldDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate>
+@interface ToDoViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,MenuViewControllerDelegate,UITextFieldDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate,MCPagerViewDelegate>
 @property (nonatomic, weak) IBOutlet UINavigationItem *navigationTitle;
 @property (nonatomic, strong) NSArray *toDoCategories;
 @property (nonatomic, assign) NSInteger selectedCategory;

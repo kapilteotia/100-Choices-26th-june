@@ -17,6 +17,7 @@
 		3221B487194AB8C100F571E1 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221B486194AB8C100F571E1 /* SearchViewController.m */; };
 		3221B48B194AE22800F571E1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221B48A194AE22800F571E1 /* LoginViewController.m */; };
 		324726E4194DB5C300EB1D7A /* AlreadyAnUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324726E3194DB5C300EB1D7A /* AlreadyAnUserViewController.m */; };
+		58259281195B70E700165302 /* MCPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58259280195B70E700165302 /* MCPagerView.m */; };
 		582F1FBF19595698002A4B58 /* nike.png in Resources */ = {isa = PBXBuildFile; fileRef = 582F1FBB19595698002A4B58 /* nike.png */; };
 		582F1FC019595698002A4B58 /* only.png in Resources */ = {isa = PBXBuildFile; fileRef = 582F1FBC19595698002A4B58 /* only.png */; };
 		582F1FC119595698002A4B58 /* puma.png in Resources */ = {isa = PBXBuildFile; fileRef = 582F1FBD19595698002A4B58 /* puma.png */; };
@@ -201,6 +202,8 @@
 		3221B48A194AE22800F571E1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		324726E2194DB5C300EB1D7A /* AlreadyAnUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlreadyAnUserViewController.h; sourceTree = "<group>"; };
 		324726E3194DB5C300EB1D7A /* AlreadyAnUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlreadyAnUserViewController.m; sourceTree = "<group>"; };
+		5825927F195B70E700165302 /* MCPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPagerView.h; sourceTree = "<group>"; };
+		58259280195B70E700165302 /* MCPagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPagerView.m; sourceTree = "<group>"; };
 		582F1FBB19595698002A4B58 /* nike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nike.png; sourceTree = "<group>"; };
 		582F1FBC19595698002A4B58 /* only.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = only.png; sourceTree = "<group>"; };
 		582F1FBD19595698002A4B58 /* puma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puma.png; sourceTree = "<group>"; };
@@ -625,6 +628,8 @@
 				5DB4020218110C2D00992B4F /* Main.storyboard */,
 				84564C31194035A100B49086 /* MainTabBar.h */,
 				84564C32194035A100B49086 /* MainTabBar.m */,
+				5825927F195B70E700165302 /* MCPagerView.h */,
+				58259280195B70E700165302 /* MCPagerView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1116,6 +1121,7 @@
 				5DABF1681815503500FA4743 /* TPKeyboardAvoidingTableView.m in Sources */,
 				5DB402361811174400992B4F /* MenuViewController.m in Sources */,
 				5DABF1661815503500FA4743 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				58259281195B70E700165302 /* MCPagerView.m in Sources */,
 				3221B487194AB8C100F571E1 /* SearchViewController.m in Sources */,
 				5DB40229181111EC00992B4F /* ECSlidingViewController.m in Sources */,
 				5DABF1691815503500FA4743 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
