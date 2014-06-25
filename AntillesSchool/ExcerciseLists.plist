@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ExcerciseList</key>
+		<array>
+			<string>Pull-Ups</string>
+			<string>Chin-Ups</string>
+			<string>Pull-Downs</string>
+			<string>Rows</string>
+			<string>Shrugs</string>
+		</array>
+		<key>Excercise_Name</key>
+		<string>Back Exercises</string>
+		<key>Excercise_Image</key>
+		<string>1.png</string>
+	</dict>
+	<dict>
+		<key>ExcerciseList</key>
+		<array>
+			<string>Standing Curls</string>
+			<string>Preacher Curls</string>
+			<string>Seated Curls</string>
+			<string>Incline Curls</string>
+			<string>Hammer Curls</string>
+			<string>Concentration Curls</string>
+			<string>Cable Curls</string>
+		</array>
+		<key>Excercise_Name</key>
+		<string>Biceps Exercises</string>
+		<key>Excercise_Image</key>
+		<string>2.png</string>
+	</dict>
+	<dict>
+		<key>ExcerciseList</key>
+		<array>
+			<string>Calf Raises</string>
+		</array>
+		<key>Excercise_Name</key>
+		<string>Calf Exercises</string>
+		<key>Excercise_Image</key>
+		<string>3.png</string>
+	</dict>
+	<dict>
+		<key>ExcerciseList</key>
+		<array>
+			<string>Bench Press</string>
+			<string>Chest Press</string>
+			<string>Pec Deck Machine</string>
+			<string>Dumbbell Flyes</string>
+			<string>Cable Crossovers/Cable Flyes</string>
+		</array>
+		<key>Excercise_Name</key>
+		<string>Chest Exercises</string>
+		<key>Excercise_Image</key>
+		<string>4.png</string>
+	</dict>
+	<dict>
+		<key>ExcerciseList</key>
+		<array>
+			<string>Weighted Crunches</string>
+			<string>Oblique Twists</string>
+			<string>Rotational Cable Rows</string>
+			<string>Cable Shotputs</string>
+		</array>
+		<key>Excercise_Name</key>
+		<string>Core Exercises</string>
+		<key>Excercise_Image</key>
+		<string>Triceps1@2x.png</string>
+	</dict>
+	<dict>
+		<key>ExcerciseList</key>
+		<array>
+			<string>Deadlifts</string>
+			<string>Glute-Ham Raises</string>
+			<string>Hyperextensions</string>
+			<string>Cable Pull-Throughs</string>
+			<string>Good-Mornings</string>
+			<string>Leg Curls</string>
+		</array>
+		<key>Excercise_Name</key>
+		<string>Hamstring Exercises</string>
+		<key>Excercise_Image</key>
+		<string>Hamstring@2x.png</string>
+	</dict>
+	<dict>
+		<key>ExcerciseList</key>
+		<array>
+			<string>Squats</string>
+			<string>Lunges</string>
+			<string>Step-Ups</string>
+			<string>Leg Press</string>
+			<string>Leg Extensions</string>
+		</array>
+		<key>Excercise_Name</key>
+		<string>Quadriceps Exercises</string>
+		<key>Excercise_Image</key>
+		<string>Quadriceps@2x.png</string>
+	</dict>
+	<dict>
+		<key>ExcerciseList</key>
+		<array>
+			<string>Overhead Press</string>
+			<string>Lateral Raises</string>
+			<string>Front Raises</string>
+		</array>
+		<key>Excercise_Name</key>
+		<string>Shoulder Exercises</string>
+		<key>Excercise_Image</key>
+		<string>Shoulder@2x.png</string>
+	</dict>
+	<dict>
+		<key>ExcerciseList</key>
+		<array>
+			<string>Dips</string>
+			<string>Close Grip Bench Press</string>
+			<string>Triceps Extensions</string>
+			<string>Cable Press-Downs</string>
+			<string>Kickback</string>
+		</array>
+		<key>Excercise_Name</key>
+		<string>Triceps Exercises</string>
+		<key>Excercise_Image</key>
+		<string>Triceps@2x.png</string>
+	</dict>
+</array>
+</plist>

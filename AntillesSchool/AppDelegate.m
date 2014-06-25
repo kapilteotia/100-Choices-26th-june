@@ -9,10 +9,32 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
+@synthesize cartarry;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+
+    sleep(2);
+    //Customizing the Navigation Bar image, Navigation Bar Title and the Status Bar Style.
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@""]
+                                       forBarMetrics:UIBarMetricsDefault];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    NSShadow *shadow = [[NSShadow alloc] init];
+   // shadow.shadowColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.8];
+   // shadow.shadowOffset = CGSizeMake(0, 1);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor blueColor], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:@"HelveticaNeue" size:18.0], NSFontAttributeName, nil]];
+    
+   
     // Override point for customization after application launch.
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    pageControl.backgroundColor = [UIColor whiteColor];
+    
+    
     return YES;
 }
 							
